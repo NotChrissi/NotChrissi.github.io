@@ -11,8 +11,12 @@
     <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
   <style>
+     {
+      display: none;
+    }
     body, html {
       height: 100%;
       margin: 0;
@@ -20,6 +24,7 @@
       color: white;
       font-family: Roboto;
     }
+
     .container {
       width: 100%;
       height: 100%;
@@ -141,6 +146,23 @@
 
 </body>
 <script>
+
+  fetch('https://api.openligadb.de/getmatchdata/bl1/2023/2')
+    .then(response => response.json())
+    .then(data => {
+      // Annahme: Das Array data enthält die Informationen zu allen Spielen
+      // Durchlaufe das Array, um das Spiel gegen Eintracht Frankfurt zu finden
+      data.forEach(game => {
+        if (game.team1.teamId === 91 || game.team2.teamId === 91) {
+          const gegner = game.team1.teamName === 'Eintracht Frankfurt' ? game.team2.teamName : game.team1.teamName;
+          const datum = new Date(game.matchDateTime);
+          let dateFormatted = datum.getDate() + "." + datum.getMonth() + "." + datum.getFullYear() +  ", " + datum.getHours() + ":" + datum.getMinutes() + " Uhr";
+          console.log(dateFormatted)
+          // Speichere die Daten oder führe weitere Operationen durch
+        }
+      });
+    })
+
   let slideIndex = 0;
   let startX = 0;
   let endX = 0;
