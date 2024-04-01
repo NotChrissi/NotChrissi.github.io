@@ -2,7 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
   background: black;
-  color: white;
+  color: green;
   font-family: Roboto;
 }
 .container {
@@ -34,11 +34,12 @@ body, html {
   filter: brightness(0%);
 }
 .gamename{
-  font-size: 400%;
+  position: absolute;
+  font-size: 300%;
   font-weight: bold;
-  margin-top: 82.75%;
-  margin-left: 5.75%;
-  letter-spacing: 3px;
+  left: 8%;
+  top: 35.1%;
+  letter-spacing: 1px;
   line-height: 120%;
 }
 .blocknumber{
