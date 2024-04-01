@@ -38,17 +38,20 @@ body, html {
   font-weight: bold;
   margin-top: 82.75%;
   margin-left: 5.75%;
+  letter-spacing: 3px;
   line-height: 120%;
 }
 .blocknumber{
 
   font-size: 500%;
   font-weight: bold;
+  letter-spacing: 4px;
   margin-left: 6%;
   margin-top: 10%;
 }
 .date{
   font-size: 350%;
+  letter-spacing: 1px;
   margin-left: 5.75%;
   margin-top: 17.25%;
 }
@@ -75,6 +78,7 @@ video {
   font-size: 1100%;
   font-stretch: 150%;
   font-weight: 300;
+  letter-spacing: 4px;
   margin-left: 13.5%;
   margin-top: 26.5%;
   display:inline-block;
