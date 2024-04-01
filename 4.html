@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
   <style>
     body, html {
@@ -19,7 +27,7 @@
       position: relative;
     }
     .box {
-      width: 25%; /* Ändere die Breite auf 25% für vier Bilder */
+      width: 16.666%; /* Ändere die Breite auf 25% für vier Bilder */
       float: left;
       height: 100%;
       position: relative;
@@ -32,7 +40,7 @@
     }
 
     #slider {
-      width: 400%; /* Ändere die Breite des Sliders auf 400% */
+      width: 600%; /* Ändere die Breite des Sliders auf 400% */
       height: 100%;
       position: relative;
       left: 0;
@@ -97,6 +105,36 @@
       <p class="date">5.4.2024, 20:30 Uhr</p>
       <p class="rang">O</p>
     </div>
+    <div class="box">
+      <img src="img/ohnetextkarte.png">
+      <video autoplay loop muted playsinline class="balkenvideo">
+        <source src="img/RPReplay_Final1711957605.mp4" type="video/mp4">
+      </video>
+      <p class="gamename">Eintracht Frankfurt vs. SV Werder Bremen</p>
+      <p class="blocknumber">47</p>
+      <p class="date">5.4.2024, 20:30 Uhr</p>
+      <p class="rang">O</p>
+    </div>
+    <div class="box">
+      <img src="img/ohnetextkarte.png">
+      <video autoplay loop muted playsinline class="balkenvideo">
+        <source src="img/RPReplay_Final1711957605.mp4" type="video/mp4">
+      </video>
+      <p class="gamename">Eintracht Frankfurt vs. SV Werder Bremen</p>
+      <p class="blocknumber">47</p>
+      <p class="date">5.4.2024, 20:30 Uhr</p>
+      <p class="rang">O</p>
+    </div>
+    <div class="box">
+      <img src="img/ohnetextkarte.png">
+      <video autoplay loop muted playsinline class="balkenvideo">
+        <source src="img/RPReplay_Final1711957605.mp4" type="video/mp4">
+      </video>
+      <p class="gamename">Eintracht Frankfurt vs. SV Werder Bremen</p>
+      <p class="blocknumber">47</p>
+      <p class="date">5.4.2024, 20:30 Uhr</p>
+      <p class="rang">O</p>
+    </div>
     <div class="box outer"><img src="img/ohnetextkarte.png"></div>
   </div>
 </div>
@@ -127,16 +165,16 @@
     slideIndex += n;
     if (slideIndex < 0) {
       slideIndex = 0;
-    } else if (slideIndex > 2) {
-      slideIndex = 2;
+    } else if (slideIndex > 5) {
+      slideIndex = 5;
     }
-    document.getElementById("slider").style.transform = "translateX(" + (-slideIndex * 25) + "%)";
+    document.getElementById("slider").style.transform = "translateX(" + (-slideIndex * 16.66) + "%)";
 
     // Überprüfen, ob der Benutzer versucht, über den sichtbaren Bereich hinaus zu swipen
-    if (slideIndex === 0 && n === -1 || slideIndex === 2 && n === 1) {
+    if (slideIndex === 0 && n === -1 || slideIndex === 5 && n === 1) {
       let interval = setInterval(function() {
         slideIndex -= n; // Ändere die Anzahl der Schritte nach Bedarf
-        document.getElementById("slider").style.transform = "translateX(" + (-slideIndex * 25) + "%)";
+        document.getElementById("slider").style.transform = "translateX(" + (-slideIndex * 16.66) + "%)";
 
         clearInterval(interval); // Stoppt das Intervall, wenn alle Schritte abgeschlossen sind
 
@@ -146,4 +184,16 @@
   slide(-1);
 
 </script>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
 </html>
