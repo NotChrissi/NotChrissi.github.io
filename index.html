@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
   <style>
     body, html {
       height: 100%;
       margin: 0;
-      background: darkblue;
-      color: green;
+      background: black;
+      color: white;
       font-family: Roboto;
     }
     .container {
@@ -52,14 +53,40 @@
       margin-left: 7.5%;
       margin-top: 6%;
       font-size: 300%;
+      font-weight: bold;
+      letter-spacing: 0.85px;
+    }
+    .blocknumber{
+      margin-top: 9%;
+      margin-left: 7.7%;
+      letter-spacing: 0px;
+      font-weight: bold;
+      font-size: 370%;
+    }
+    .date{
+      letter-spacing: -1.5px;
+      font-size: 280%;
+      margin-left: 7.5%;
+      margin-top: 16%;
+    }
+    .rang{
+      font-weight: 500;
+      font-size: 850%;
+      margin-top: 28.5%;
+      margin-left: 19%;
 
+      -webkit-transform:scale(1.12,1); /* Safari and Chrome */
+      -moz-transform:scale(1.12,1); /* Firefox */
+      -ms-transform:scale(1.12,1); /* IE 9 */
+      -o-transform:scale(1.12,1); /* Opera */
+      transform:scale(1.12,1); /* W3C */
     }
   </style>
 </head>
 <body>
 <div class="container">
   <div id="slider" ontouchstart="startTouch(event)" ontouchmove="moveTouch(event)" ontouchend="endTouch()">
-    <div class="box outer"><img src="img/mittextkarte.png"></div>
+    <div class="box outer"><img src="img/ohnetextkarte.png"></div>
     <div class="box">
       <img src="img/mittextkarte.png">
       <video autoplay loop muted playsinline class="balkenvideo">
