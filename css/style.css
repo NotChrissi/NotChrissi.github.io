@@ -1,0 +1,14 @@
+body{
+  height: 100%;
+  margin: 0;
+  background: rgb(20, 20, 20);
+  color: white;
+  font-family: Roboto;
+}
+body *{
+  width: 100%;
+  font-size: 200%
+}
+a {
+  color: lightcoral;
+}
