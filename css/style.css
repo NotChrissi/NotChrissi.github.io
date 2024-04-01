@@ -26,7 +26,7 @@ body, html {
   height: 100%;
   position: relative;
   left: 0;
-  top: -10%;
+  top: -5%;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Verwende eine cubic-bezier Kurve für eine sanftere Transition */
   cursor: grab;
   display: flex;
@@ -35,24 +35,24 @@ body, html {
   filter: brightness(0%);
 }
 .gamename{
-  font-size: 45px;
+  font-size: 400%;
   font-weight: bold;
   margin-top: 82.75%;
   margin-left: 5.75%;
-  letter-spacing: 4px;
-  line-height: 130%;
+  letter-spacing: 3px;
+  line-height: 120%;
 }
 .blocknumber{
 
-  font-size: 60px;
+  font-size: 500%;
   font-weight: bold;
   letter-spacing: 4px;
   margin-left: 6%;
   margin-top: 10%;
 }
 .date{
-  font-size: 40px;
-  letter-spacing: 2px;
+  font-size: 350%;
+  letter-spacing: 1px;
   margin-left: 5.75%;
   margin-top: 17.25%;
 }
@@ -76,7 +76,7 @@ video {
   transform: translate(-50%, -50%); /* Zentrieren des Videos */
 }
 .rang{
-  font-size: 140px;
+  font-size: 1100%;
   font-stretch: 150%;
   font-weight: 300;
   letter-spacing: 4px;
