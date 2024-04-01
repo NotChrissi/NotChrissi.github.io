@@ -15,6 +15,16 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: Roboto;
+  font-weight: bold;
+}
+body {
+  /* Set background size to cover the entire body */
+  background-size: cover;
+  /* Scale the background image to 80% */
+  transform: scale(0.8);
+  /* Center the background image */
+  background-position-y: 5%;
 }
 
 /*
