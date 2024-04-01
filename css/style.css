@@ -26,6 +26,7 @@ body, html {
   height: 100%;
   position: relative;
   left: 0;
+  top: -10%;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Verwende eine cubic-bezier Kurve für eine sanftere Transition */
   cursor: grab;
   display: flex;
