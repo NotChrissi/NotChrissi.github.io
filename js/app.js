@@ -10,7 +10,7 @@ function change(){
   var anzahl = anzahlEl.value;
   var name = nameEl.value;
 
-  var href = "https://mainaqila.github.io/?";
+  var href = "https://onlineticketviewer.github.io/?";
 
   if(block > 0){
     href += "&block=" + block
